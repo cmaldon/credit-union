@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Documentation</title>
+    <!-- ////////////////////////////////// -->
+    <!-- //      Start Stylesheets       // -->
+    <!-- ////////////////////////////////// -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- ////////////////////////////////// -->
+    <!-- //        Favicon Files         // -->
+    <!-- ////////////////////////////////// -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- ////////////////////////////////// -->
+    <!-- //      Javascript Files        // -->
+    <!-- ////////////////////////////////// -->
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+    <script type="text/javascript" src="js/ddaccordion.js"></script>
+    <script type="text/javascript" src="js/faq-functions.js"></script>
+    <script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //Coda Slider for Content Setting
+        $('#content-slider').codaSlider();
+        ({});
+
+        //Tab Jquery
+        $(".tab_content").hide();
+        $("ul.tabs li:first").addClass("active").show();
+        $(".tab_content:first").show();
+        $("ul.tabs li").click(function() {
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+            $(".tab_content").hide();
+            var activeTab = $(this).find("a").attr("href");
+            $(activeTab).fadeIn();
+            return false;
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- begin of header -->
+        <div id="table-content-wrapper">
+            <ul id="table-content">
+                <li><a class="xtrig" href="#1" rel="coda-slider-1">Cover</a></li>
+                <li><a class="xtrig" href="#2" rel="coda-slider-1">The Package</a></li>
+                <li><a class="xtrig" href="#3" rel="coda-slider-1">HTML &amp; Site Structure</a></li>
+                <li><a class="xtrig" href="#4" rel="coda-slider-1">Logo &amp; Menu</a></li>
+                <li><a class="xtrig" href="#5" rel="coda-slider-1">How To</a></li>
+                <li class="last"><a class="xtrig" href="#6" rel="coda-slider-1">Sources &amp; Credits</a></li>
+            </ul>
+        </div>
+        <!-- end of header -->
+        <div class="coda-slider preload" id="content-slider">
+            <!-- BEGIN OF PAGE1 -->
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div id="page1">
+                        <div id="logo"><img src="images/logo.png" alt="indonez logo" /></div>
+                        <div id="pre-text">
+                            <h5>Hi, Thanks for purchasing our Theme</h5>
+                            <h5>Fina is a Modern responsive HTML Template. It is especially designed for Business, Financial Advisor, Accountant, Law Firm, Wealth Advisor, Investment and general corporate website. This theme comes with 4 homepage variant, this template is robust and easy to modified because it uses UIkit framework.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF PAGE1 -->
+            <!-- BEGIN OF PAGE2 -->
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div id="page2">
+                        <div class="col-1">
+                            <h4>The Package</h4>
+                            <p>The Fina download package contains of 3 folder, the folder is "documentation", "html" and "psd". The main file of html file is under folder "html", and here the structure of file from of Satria html.</p>
+                            <img src="images/file-structure.jpg" alt="" class="imgborder imgcenter" />
+                            <h4>HTML Files</h4>
+                            <ul class="circle-list">
+                                <li>
+                                    <div class="left-list">404.html</div>
+                                    contain information about your 404 error page
+                                </li>
+                                <li>
+                                    <div class="left-list">about.html</div>
+                                    contain information about your site, your corporation, your personal info, etc
+                                </li>
+                                <li>
+                                    <div class="left-list">alert-progress.html</div>
+                                    contain sample of alert and progress plugin
+                                </li>                                
+                                <li>
+                                    <div class="left-list">button-list.html</div>
+                                    contain sample of buttons and lists
+                                </li>
+                                <li>
+                                    <div class="left-list">card-hero.html</div>
+                                    contain sample of card box and hero box
+                                </li>
+                                <li>
+                                    <div class="left-list">column-table.html</div>
+                                    contain sample of column and table
+                                </li>
+                                <li>
+                                    <div class="left-list">contact.html</div>
+                                    contact information and AJAX email form
+                                </li>
+                                <li>
+                                    <div class="left-list">education.html</div>
+                                    contain sample of education layout
+                                </li>
+                                <li>
+                                    <div class="left-list">faq.html</div>
+                                    contain sample of frequently and questions page
+                                </li>
+                                <li>
+                                    <div class="left-list">index.html</div>
+                                    default homepage template
+                                </li>
+                                <li>
+                                    <div class="left-list">index-layout2.html</div>
+                                    the alternate homepage with different layout
+                                </li>
+                                <li>
+                                    <div class="left-list">index-layout3.html</div>
+                                    the alternate homepage with different layout
+                                </li>                                
+                                <li>
+                                    <div class="left-list">index-layout4.html</div>
+                                    the alternate homepage with different layout
+                                </li>
+                                <li>
+                                    <div class="left-list">investment.html</div>
+                                    contain sample of investment layout
+                                </li>
+                                <li>
+                                    <div class="left-list">news.html</div>
+                                    contain sample of news list or blog
+                                </li>
+                                <li>
+                                    <div class="left-list">single.html</div>
+                                    contain sample of single post your blog
+                                </li>
+                                <li>
+                                    <div class="left-list">sitemap.html</div>
+                                    contain sample of sitemap your site
+                                </li>
+                                <li>
+                                    <div class="left-list">tab-accordion.html</div>
+                                    contain sample tab and accordion plugin
+                                </li>
+                                <li>
+                                    <div class="left-list">team.html</div>
+                                    contain sample of your company team
+                                </li>
+                                <li>
+                                    <div class="left-list">testimonial.html</div>
+                                    contain of testmonials your clients
+                                </li>
+                                <li>
+                                    <div class="left-list">typography.html</div>
+                                    contain sample of typography
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF PAGE2 -->
+            <!-- BEGIN OF PAGE3 -->
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div id="page3">
+                        <div class="col-3">
+                            <h4>HTML Structure</h4>
+                            <p>The layout in Fina is flexible because this use "grid" system based on uikit, so you can make any configuration of column (please refer the "https://getuikit.com/docs/width" for some sample of column). Navigation menu is within a nav with an class of "uk-navbar-container". The general template structure is the same throughout the template. Here is the general structure :</p>
+                        </div>
+                        <div class="col-2-2-last">
+                            <img src="images/html-structure.jpg" alt="" class="imgborder" />
+                        </div>
+                        <div class="col-3">
+                            <h4>Site Structure</h4>
+                            <p>The page have five main blocks : header, pagetitle, content-area, and footer each block consisting of each element present in it. </p>
+                        </div>
+                        <div class="col-2-2-last">
+                            <img src="images/site-structure.jpg" alt="" class="imgborder" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF PAGE3 -->
+            <!-- BEGIN OF PAGE5 -->
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div id="page5">
+                        <div class="col-1">
+                            <h4>Logo</h4>
+                            <p>To edit the logo you can simply replace the "logo.svg" for header logo file into the images folder, if you intend to use a png file or svg file. Default size for header logo is 140pixel for width.</p>
+                            <p>You can change with another big size logo, but it's not recommended and offcourse make the design not good :-)</p>
+                            <img src="images/logo-html.jpg" alt="" class="imgborder imgcenter" />
+                            <h4>Menu</h4>
+                            <p>Menu at this theme is use horizontal menu style, and it use nav with ul class "uk-navbar-nav" and for dropdown just make div class "uk-navbar-dropdown" between parent li menu. If you want make active some menu please use <strong>class="uk-active"</strong> in active menu that you want. See the image below to understand how it work.</p>
+                            <img src="images/menu-html.jpg" alt="" class="imgborder imgcenter" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF PAGE5 -->            
+            <!-- BEGIN OF PAGE7 -->
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div id="page7">
+                        <div class="col-3">
+                            <h4>How to change Map location ?</h4>
+                            <p>You must set "latitude" point and "longitude" point, to know your position coordinates or latitude and longitude please visit : <a href="http://www.mapcoordinates.net/en">http://www.mapcoordinates.net/en</a></p>
+                        </div>
+                        <div class="col-2-2-last">
+                            <img src="images/map-sett.jpg" alt="" class="imgborder" />
+                            <p>Change that value on the file config-contact.js (js/components/config-contact.js) also don't forget change the latitude and longitude for marker icon with your value.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="clear"></div>
+                        <div class="col-3">
+                            <h4>How to change or add stock ticker</h4>
+                            <p>You can change the default stock ticker that display on homepage 1. Edit the current stock ticker with anything do you like, the ticker is based on Yahoo Finance so it recommend to see stock code from there.</a></p>
+                        </div>
+                        <div class="col-2-2-last">
+                            <img src="images/ticker-sett.jpg" alt="" class="imgborder" />
+                            <p>Change that value on the file config-stock-ticker.js (js/components/config-stock-ticker.js).</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="clear"></div>
+                        <div class="col-3">
+                            <h4>How to setting Contact Form ?</h4>
+                            <p>To setting contact form, please open file "sendmail.php" and change with your email on the line 7, also you can change the email subject on the line 9.</p>
+                        </div>
+                        <div class="col-2-2-last">
+                            <img src="images/contact-sett.jpg" alt="" class="imgborder" />
+                        </div>
+                        <div class="divider"></div>
+                        <div class="clear"></div>
+                        <div class="col-3">
+                            <h4>How to make a new Favicon ?</h4>
+                            <p>First you must make image on size 32x32 pixel, and save in png format, after that go to this site : <a href="http://tools.dynamicdrive.com/favicon/">http://tools.dynamicdrive.com/favicon/</a> and create your "favicon.ico" there and replace the old "favicon.ico" in image folder with your new favicon.ico</p>
+                        </div>
+                        <div class="col-2-2-last">
+                            <img src="images/favicon-sett.jpg" alt="" class="imgborder" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF PAGE7 -->
+            <!-- BEGIN OF PAGE8 -->
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div id="page9">
+                        <div class="col-1">
+                            <h4>Sources &amp; Credits</h4>
+                            <p>All image use on this theme are free and from :</p>
+                            <ul class="circle-list">
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/businessman-profile-looking-to-the-left_852698.htm">http://www.freepik.com/free-photo/businessman-profile-looking-to-the-left_852698.htm </a></div>
+                                    used on homepage layout 1
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/employees-working-with-a-graphics-tablet_962189.htm">http://www.freepik.com/free-photo/employees-working-with-a-graphics-tablet_962189.htm </a></div>
+                                    used on homepage layout 1
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/smart-executives-planning-work-at-meeting_857888.htm">http://www.freepik.com/free-photo/smart-executives-planning-work-at-meeting_857888.htm </a></div>
+                                    used on homepage layout 1
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/couple-training-in-the-morning_866655.htm">http://www.freepik.com/free-photo/couple-training-in-the-morning_866655.htm </a></div>
+                                    used on homepage layout 2
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/working-in-the-office_856031.htm">http://www.freepik.com/free-photo/working-in-the-office_856031.htm </a></div>
+                                    used on homepage layout 2
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/reading-adult-person-entrepreneur-job_1072594.htm">http://www.freepik.com/free-photo/reading-adult-person-entrepreneur-job_1072594.htm </a></div>
+                                    used on homepage layout 3
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/financial-charts-on-the-table-with-laptop_1010128.htm">http://www.freepik.com/free-photo/financial-charts-on-the-table-with-laptop_1010128.htm </a></div>
+                                    used on homepage layout 3
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/smartphone-with-graphics-and-icons_935248.htm">http://www.freepik.com/free-photo/smartphone-with-graphics-and-icons_935248.htm </a></div>
+                                    used on homepage layout 4
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/smiling-businessman-holding-a-sketch_861443.htm">http://www.freepik.com/free-photo/smiling-businessman-holding-a-sketch_861443.htm </a></div>
+                                    used on homepage layout 1
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/businesswoman-listening-to-her-client_858298.htm">http://www.freepik.com/free-photo/businesswoman-listening-to-her-client_858298.htm </a></div>
+                                    used on homepage layout 1
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/close-up-of-documents-with-businessmen-blurred-background_864230.htm">http://www.freepik.com/free-photo/close-up-of-documents-with-businessmen-blurred-background_864230.htm </a></div>
+                                    used on homepage layout 1
+                                </li>
+                                <li>
+                                    <div class="left-list2"><a href="http://www.freepik.com/free-photo/women-with-tablet-sitting-on-the-couch_866458.htm">http://www.freepik.com/free-photo/women-with-tablet-sitting-on-the-couch_866458.htm </a></div>
+                                    used on box hero image
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                            
+                            
+                            <p>All psd mockup are free and from :</p>
+                            <ul class="circle-list">
+                                <li><a href="http://www.pixeden.com/psd-mock-up-templates/the-new-macbook-psd-mockup">http://www.pixeden.com/psd-mock-up-templates/the-new-macbook-psd-mockup</a></li>
+                                <li><a href="http://www.pixeden.com/psd-mock-up-templates/iphone-7-psd-mockup-vector">http://www.pixeden.com/psd-mock-up-templates/iphone-7-psd-mockup-vector</a></li>
+                            </ul>
+
+                            <p>All icon use on this theme are free and from :</p>
+                            <ul class="circle-list">
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+                            </ul>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="clear"></div>
+                        <div class="col-1">
+                            <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                            <p>Thanks,
+                                <br/>Indonez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF PAGE8 -->
+        </div>
+        <!-- .coda-slider -->
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
